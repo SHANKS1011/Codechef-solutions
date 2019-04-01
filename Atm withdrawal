@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+#define FIXED_FLOAT(x) std::fixed <<std::setprecision(2)<<(x)
+
+int main() {
+	int x;
+	float y;
+	cin >> x >>y;
+	if(x<y)
+	{
+	    if(x%5==0)
+	    {
+	        float p= (y-x)-0.5;
+	        cout << FIXED_FLOAT(p);
+	    }
+	    else
+	    {
+	        cout << FIXED_FLOAT(y);
+	    }
+	}
+	else if(x>y)
+	{
+	    cout << FIXED_FLOAT(y);
+	}
+	return 0;
+}
