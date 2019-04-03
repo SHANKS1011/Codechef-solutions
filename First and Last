@@ -1,0 +1,34 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
+		int T=Integer.parseInt(br.readLine());
+		int f=0,l=0;
+		while(T>0)
+		{
+		    int N=Integer.parseInt(br.readLine());
+		    int sum=0;
+		    //gets the last value of the Integer
+		    l=N%10;
+		    N=N/10;
+		    do
+		    {
+		        f=N%10;
+		        N=N/10;
+		        
+		    }while(N>0);
+		    sum=f+l;
+		    System.out.println(sum);
+		    T--;
+		}
+		
+	}
+}
