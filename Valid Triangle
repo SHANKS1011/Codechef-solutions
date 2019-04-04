@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int T=0;
+	cin >> T;
+	while(T--)
+	{
+	    int A=0,B=0,C=0;
+	    cin >> A >> B >> C;
+	    int sum=A + B + C;
+	    if(sum==180)
+	    {
+	       cout << "YES" << endl;
+	    }
+	    else
+	    {
+	        cout <<"NO" << endl;
+	    }
+	}
+	return 0;
+}
