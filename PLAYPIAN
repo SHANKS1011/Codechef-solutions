@@ -1,0 +1,22 @@
+import java.util.*;
+class PLAYPIAN{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int T=sc.nextInt();
+    for(int i=0; i<T; i++){
+      boolean f=true;
+      String str=sc.next();
+      for(int j=0; j<str.length()-1; j=j+2){
+        String order=str.substring(j,j+2);
+        if(!(order.equals("AB") || order.equals("BA"))){
+          f=false;
+          break;
+        }
+      }
+      if(f==true)
+      System.out.println("yes");
+      else
+      System.out.println("no");
+    }
+  }
+}
