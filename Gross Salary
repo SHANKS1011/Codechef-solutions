@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin >> t;
+	while(t>0)
+	{
+	    float sal;
+	    float h,d;
+	    cin >> sal;
+	    if(sal>=1500)
+	    {
+	        h=500;
+	        d=(0.98*sal);
+	        sal= sal + d + h;
+	        cout <<fixed<<setprecision(2)<< sal <<endl;
+	    }
+	    else
+	    {
+	        h=(0.1*sal);
+	        d=(0.9*sal);
+	        sal= sal + d + h;
+	        cout <<fixed <<setprecision(2)<< sal << endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
