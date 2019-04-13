@@ -1,0 +1,44 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <iomanip>
+#include <numeric>
+#include <set>
+#include <iterator>
+#include <functional>
+#include <map>
+#include <sstream>
+#include <random>
+#include <ctime>
+#include <queue>
+#include <regex>
+
+using namespace std;
+
+int main() {
+	cin.tie(nullptr);
+	cin.sync_with_stdio(false);
+
+	int T;
+	cin >> T;
+	regex r("ch|he|ef");
+	int c = 0;
+	while (T--) {
+		string a;
+		cin >> a;
+		if (regex_search(a, r)) c++;
+	}
+	cout << c;
+
+	return 0;
+}
+
+
+
+
+
+
+
+
