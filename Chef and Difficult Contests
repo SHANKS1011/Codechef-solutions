@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+int t,a,b;
+ cin>>t;
+ while(t!=0)
+ {
+  cin>>a>>b;
+  if(a<1 || b<1)
+  cout<<"NO\n";
+  else
+  cout<<"YES\n";
+  --t;
+ }
+ return 0;
+ }
+  
+ #include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+int t,a,b;
+ cin>>t;
+ while(t!=0)
+ {
+  cin>>a>>b;
+  if(a<1 || b<1)
+  cout<<"NO\n";
+  else
+  cout<<"YES\n";
+  --t;
+ }
+ return 0;
+ }
+  
+ 
