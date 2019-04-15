@@ -1,0 +1,40 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		int t = Integer.parseInt(sc.nextLine());
+		for(int i=0;i<t;i++)
+		{
+		    String s = sc.nextLine();
+		    String w1,w2,w3;
+		    String arr[] = s.split(" ");
+		    if(arr.length == 3)
+		    {
+		        w1 = arr[0];
+		        w2 = arr[1];
+		        w3 = arr[2];
+		        System.out.println(w1.substring(0,1).toUpperCase()+". "+w2.substring(0,1).toUpperCase()+". "+w3.substring(0,1).toUpperCase()+w3.substring(1).toLowerCase());
+		    }
+		    if(arr.length == 2)
+		    {
+		        w1 = arr[0];
+		        w2 = arr[1];
+		        System.out.println(w1.substring(0,1).toUpperCase()+". "+w2.substring(0,1).toUpperCase()+w2.substring(1).toLowerCase());
+		    }
+		    if(arr.length == 1)
+		    {
+		        w1 = arr[0];
+		        System.out.println(w1.substring(0,1).toUpperCase()+w1.substring(1).toLowerCase());
+		    }
+		}
+	}
+}
