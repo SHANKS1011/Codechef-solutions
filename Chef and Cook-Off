@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n;
+	while(n--)
+	{
+	    int j,a[5],count=0;
+		for(j=1;j<=5;j++){
+	          	cin>>a[j];
+			if(a[j]==1)
+			count++;
+		}
+	if(count==0)
+	printf("Beginner\n");
+	else if(count==1)
+	printf("Junior Developer\n");
+	else if(count==2)
+	printf("Middle Developer\n");
+	else if(count==3)
+	printf("Senior Developer\n");
+	else if(count==4)
+	printf("Hacker\n");
+	else
+	printf("Jeff Dean\n");
+}
+}
