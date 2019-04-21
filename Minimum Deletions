@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int gcd(int a, int b)
+{
+	if (a == 0)
+		return b;
+	return gcd(b % a, a);
+}
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+    {
+    	int k,n,x,i;
+    	cin>>n>>k;
+    	for(i=1;i<n;i++)
+    	{
+    		cin>>x;
+    		k=gcd(k,x);
+    	}
+    	if(k==1)
+        	cout<<0<<endl;
+    	else
+    	    cout<<-1<<endl;
+    }
+}
