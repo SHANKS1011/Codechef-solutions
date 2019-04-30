@@ -1,0 +1,28 @@
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main() {
+    int T;
+    cin>>T;
+    int N,len;
+    string str;
+    while(T--){
+        cin>>len>>N;
+        cin>>str;
+        set<int>s;
+        s.insert(N);
+        for(int i=0;i<len;i++){
+            if(str[i]=='L'){
+                N=N-1;
+                s.insert(N);
+            }
+            else{
+                N=N+1;
+                s.insert(N);
+            }
+        }
+        cout<<s.size()<<"\n";
+    }
+	return 0;
+}
