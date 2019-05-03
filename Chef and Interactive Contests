@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int n, r;
+	cin >>n >> r;
+	while(n--)
+	{
+	    long a;
+	    cin >> a;
+	    if(a >= r)
+	    {
+	        cout << "Good boi" <<"\n";
+	    }
+	    else if(a < r)
+	    {
+	        cout << "Bad boi" <<"\n";
+	    }
+	}
+	return 0;
+}
