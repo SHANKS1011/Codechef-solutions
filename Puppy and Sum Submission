@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int sum(int n)
+{
+    if(n==1)
+    return n;
+   
+    int sum=0;
+    sum= (n*(n+1))/2;
+    return sum;
+}
+
+int main()
+{
+    int t;
+    cin>>t;
+    
+    while(t--)
+    {
+    int num, d,i;
+    cin>>d>>num;
+    
+    for(i=0;i<d;i++)
+        num=sum(num);
+
+    cout<<num<<endl;
+    }
+
+return 0;
+}
