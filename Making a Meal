@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+#define io ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define m(a,b) min(a,b)
+using namespace std;
+
+int main(){
+    io
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        string s;
+        int a[30];
+        memset(a,0,sizeof(a));
+        while(n--){
+            cin>>s;
+            for(int i=0;i<s.size();i++) a[(s[i]-'a')]++;
+        }
+        int let_2 = m(a[('c'-'a')],a[('e'-'a')])/2;
+        int let_1 = m(m(m(a[('f'-'a')],a['d'-'a']) , a[('h'-'a')]) , a['o'-'a']);
+        cout<<m(let_1,let_2)<<"\n";
+    }
+}
